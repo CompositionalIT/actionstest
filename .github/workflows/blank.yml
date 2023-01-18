@@ -7,12 +7,12 @@ on:
 
 jobs:
   build:
-    environment: test
+    environment: prod
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
       - name: Run a multi-line script
         run: |
-          echo "This is the ${{ github.ref_name }} branch."
-          echo "The value of THING is ${{ vars.THING }}"
+          echo "This is the ${{ github.ref_name }} branch, what a branch!"
+          echo "The value of THING is ${{ vars.THING }}, it's the best!"
