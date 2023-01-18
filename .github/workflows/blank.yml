@@ -7,8 +7,8 @@ on:
 
 jobs:
   build:
+    environment: ${{ vars.ENVIRONMENT_STAGE }}
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
