@@ -14,5 +14,5 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          echo "This is the ${{ github.ref_name }} branch."
-          echo "The value of THING is ${{ vars.THING }}"
+          echo "This is the ${{ github.ref_name }} branch, what a branch!"
+          echo "The value of THING is ${{ vars.THING }}, it's the best!"
