@@ -13,8 +13,8 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo "This is the ${{ env.GITHUB_BASE_REF }} branch."
+        run: echo "This is the $GITHUB_BASE_REF branch."
 
       - name: Run a multi-line script
         run: |
-          echo "The value of THING is ${{ env.THING }}"
+          echo "The value of THING is $THING"
